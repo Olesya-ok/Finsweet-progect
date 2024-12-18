@@ -1,0 +1,378 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1440px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.container {
+    /*max-width: 1280px;*/
+    padding: 0 82px 0;
+}
+
+header{
+    background-color: #232536;
+}
+
+.container-header{
+    display: flex;
+    padding: 25px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav{
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 24px;
+}
+
+li {
+    color: #ffffff;
+}
+
+.container .container-header .header-nav button{
+    border: none;
+    background: #ffffff;
+    color: #232536;
+    padding: 16px 48px;
+}
+
+/*section home*/
+
+.home{
+    padding-top: 128px;
+    padding-bottom: 192px;
+    background-image: url(images/man-in-black-suit-wearing-eye-glasses-sitting-on-gray-sofa-using-macbook-3772622.png);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    border: 1px solid #000;
+    /*background: radial-gradient(80.99% 71.93% at 74.58% 0%, rgba(0, 0, 0, 0) 0%, #000 100%);*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.home-block-p{
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    letter-spacing: 1px;
+}
+
+.home-block p span{
+    font-weight: bold;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 56px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    margin-bottom: 24px;
+    line-height: 114%;
+}
+
+.home-block .home-date p{
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 16px;
+    line-height: 175%;
+    letter-spacing: 1px;
+}
+
+.home-block .home-date span{
+    color: #FFD050;
+}
+
+.home-text{
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 48px;
+    letter-spacing: 1px;
+}
+
+.home-block button{
+    padding: 16px 48px;
+    background-color: #FFD050;
+    color: black;
+    border: none;
+}
+
+.home-block button:hover{
+    background-color: #EDC14A;
+    color: black;
+}
+
+/*section featured*/
+.content{
+    display: flex;
+    margin-top: 128px;
+    justify-content: center;
+    gap: 32px;
+    margin-bottom: 128px;
+}
+
+.container.content .featured-container .featured .featured-post h2{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 133%;
+    letter-spacing: 1px;
+    color: black;
+    margin-bottom: 32px;
+}
+
+.post-wrapper{
+    border: 1px solid rgba(109, 110, 118, 0.1);
+    padding: 32px;
+}
+
+.post-wrapper p{
+    margin-top: 32px;
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 143%;
+    color: #4C4C4C;
+}
+.post-wrapper span{
+    color: #592EA9;
+}
+
+.post-wrapper h3{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 143%;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+}
+
+.post-wrapper-p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: #6D6E76;
+    margin-bottom: 32px;
+}
+
+.post-wrapper button{
+    padding: 16px 48px;
+    background-color: #FFD050;
+    color: black;
+    border: none;
+}
+
+.all-posts{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.all-posts h2{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 133%;
+    letter-spacing: 1px;
+    color: black;
+}
+
+.all-posts a{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: #592EA9;
+}
+
+.item{
+    padding: 32px 116px 25px 32px;
+}
+
+.item span{
+    color: #592EA9;
+}
+
+.item-p{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133%;
+    color: black;
+}
+
+.item-p-span {
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 143%;;
+}
+
+.items .item:nth-child(2) {
+    background-color: #FBF6EA;
+
+}
+
+/*section about company*/
+.strip {
+    background-color: #FFD050;
+    height: 24px;
+    position: relative;
+}
+
+.strip::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 282px;
+    height: 100%;
+    background-color: #592EA9;
+}
+
+.strip::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 220px;
+    height: 100%;
+    background-color: white;
+}
+
+.info-about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 96px 108px 96px 80px;
+    gap: 61px;
+    background-color: #F4F0F8;
+}
+
+.info-about p:nth-child(1){
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 125%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: black;
+}
+
+.about-us h2{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 133%;
+    letter-spacing: 1px;
+    color: black;
+    margin: 21px 0 16px;
+}
+
+.about-us p:nth-of-type(2),.our-mission p:nth-of-type(2) {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: #6D6E76;
+    margin-bottom: 16px;
+}
+
+.about-us a{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 178%;
+    color: #592EA9;
+}
+
+.our-mission h2{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 143%;
+    letter-spacing: 1px;
+    color: black;
+    margin: 24px 0 16px;
+}
+
+/*section choose*/
+.choose h2{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 133%;
+    letter-spacing: 1px;
+    color: black;
+    text-align: center;
+    margin: 128px 0 48px;
+}
+
+.choose-catalogs{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    margin-bottom: 646px;
+}
+
+.choose-catalog {
+    border: 1px solid rgba(109, 110, 118, 0.2);
+    padding: 32px;
+}
+
+.choose-img{
+    background-color: #FBF6EA;
+    border-radius: 4px;
+    padding: 12px;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 16px;
+}
+
+.choose-catalog h3{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 143%;
+    letter-spacing: 1px;
+    color: black;
+    margin-bottom: 4px;
+}
+
+.choose-catalog p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: #6D6E76;
+}
+
+.choose-catalog:nth-of-type(2){
+    background-color: #FFD050;
+}
+
+
+
+
+
+
+
+
+
+
+
