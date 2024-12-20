@@ -25,7 +25,7 @@ const itemsData = [
     }
 ];
 
-// Селектор контейнера
+
 const itemsContainer = document.getElementById("items");
 
 let iterationCount = 0;
@@ -36,7 +36,7 @@ itemsData.forEach(item => {
     const itemElement = document.createElement("div");
     itemElement.className = "item";
 
-    // Создание и добавление первого <p> с <span> и <a>
+
     const itemPSpan = document.createElement("p");
     itemPSpan.className = "item-p-span";
     itemPSpan.textContent = `By `;
@@ -50,16 +50,13 @@ itemsData.forEach(item => {
     itemPSpan.appendChild(itemSpan);
     itemPSpan.appendChild(document.createTextNode(` ${item.date}`));
 
-    // Создание и добавление второго <p>
     const itemP = document.createElement("p");
     itemP.className = "item-p";
     itemP.textContent = item.text;
 
-    // Добавление созданных элементов в контейнер
     itemElement.appendChild(itemPSpan);
     itemElement.appendChild(itemP);
 
-    // Добавление элемента в контейнер
     itemsContainer.appendChild(itemElement);
 });
 
