@@ -191,7 +191,7 @@ cardsData.forEach((card) => {
     card.socialLinks.forEach((social) => {
         const linkElement = document.createElement("a");
         linkElement.href = social.link;
-        linkElement.target = "_blank"; // Открытие в новой вкладке
+        linkElement.target = "_blank";
 
         const iconElement = document.createElement("img");
         iconElement.src = social.icon;
@@ -201,16 +201,15 @@ cardsData.forEach((card) => {
         socialLinksElement.appendChild(linkElement);
     });
 
-    // Сборка карточки
     cardElement.appendChild(photoElement);
     cardElement.appendChild(authorElement);
     cardElement.appendChild(jobTitleElement);
     cardElement.appendChild(socialLinksElement);
 
-    // Добавление карточки в контейнер
     visitCardsContainer.appendChild(cardElement);
 
     iterCount++;
 });
+
 
 
