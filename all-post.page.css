@@ -165,6 +165,20 @@
     color: #000000;
 }
 
+#map {
+    height: 340px;
+    width: 600px;
+    margin-bottom: 40px;
+}
+
+#distance {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    text-align: center;
+    color: #6D6E76;
+}
+
 
 
 

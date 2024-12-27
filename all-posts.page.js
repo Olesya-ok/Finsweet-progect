@@ -81,3 +81,70 @@ postsData.forEach((postData) => {
     iterCounter++;
 });
 
+// map
+
+let LatLng = [50.366149, 30.450943];
+
+const map = L.map('map')
+    .setView(LatLng, 16);
+
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png')
+    .addTo(map);
+
+L.circle([50.366114, 30.450981], 20, {
+    // колір кордону
+    color: 'red',
+    // колір заливки
+    fillColor: 'green',
+    // Прозорість заливання
+    fillOpacity: 0.5
+}).addTo(map);
+// Опис налаштувань що можна використовувати
+// https://leafletjs.com/reference.html#path
+L.circle([50.366209, 30.453086], 20, {
+    color: 'red',
+    fillColor: 'green',
+    fillOpacity: 0.5
+}).addTo(map);
+
+
+
+// Координати маршруту
+let latlngs = [
+    [50.366149, 30.450943],
+    [50.366022, 30.451169],
+    [50.366807, 30.452392],
+    [50.366686, 30.452601],
+    [50.366764, 30.452867],
+    [50.366453, 30.453387],
+    [50.366251, 30.453056],
+    [50.366209, 30.453086],
+
+];
+
+let totalDistance = 0;
+
+for (let i = 1; i < latlngs.length; i++) {
+    let pointA = L.latLng(latlngs[i - 1]);
+    let pointB = L.latLng(latlngs[i]);
+    totalDistance += pointA.distanceTo(pointB);
+}
+
+// Оновлення тексту в HTML-елементі
+document.getElementById("distance").textContent =
+    `Загальна довжина маршруту: ${totalDistance.toFixed(2)} м`;
+
+let polyline = L.polyline(latlngs, {
+    color: 'blue',
+    dashArray: '10, 5',
+    weight: 3
+});
+
+polyline.addTo(map);
+
+let marker = L.marker(LatLng)
+    .bindPopup('Офис CyberBionic Systematics');
+marker.addTo(map);
+
+
+

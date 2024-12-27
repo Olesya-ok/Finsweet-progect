@@ -4,7 +4,10 @@
     box-sizing: border-box;
 }
 
+
+
 body {
+    font-family: "Inter", sans-serif;
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -510,7 +513,6 @@ h1{
 .visit-cards{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    align-items: center;
     gap: 32px;
 }
 
@@ -686,14 +688,30 @@ h1{
 /*section join team*/
 .container.team{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 128px;
 }
+
+#map {
+    height: 340px;
+    width: 600px;
+    margin-bottom: 40px;
+}
+
+#distance {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    text-align: center;
+    color: #6D6E76;
+}
+
 .join-team{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-bottom: 128px;
     max-width: 414px;
 }
 
@@ -780,6 +798,10 @@ li:hover {
     margin-right: 64px;
 }
 
+.subscribe form{
+    display: flex;
+}
+
 form input{
     padding: 14px 0 14px 25px;
     background-color: #4C4C4C;
@@ -820,3 +842,72 @@ form button:hover{
     gap: 27px;
 }
 
+@media (max-width: 1024px) {
+    .item{
+        padding: 20px;
+    }
+
+    .info-about{
+        padding: 50px;
+        gap: 50px;
+    }
+
+    .testimonial{
+        margin: 30px auto;
+    }
+
+    .visit-cards h3{
+        text-align: center;
+    }
+
+    .visit-card{
+        margin-bottom: 10px;
+    }
+
+    .line{
+        margin: 80px 40px 74px 40px;
+    }
+
+    .testimonials-description{
+        margin-right: 50px;
+    }
+
+    .testimonials{
+        margin-left: 60px;
+    }
+
+    .logo-component{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 200px;
+    }
+
+    .logo-components{
+        margin-bottom: 10px;
+    }
+
+    #map {
+        height: 300px;
+        width: 500px;
+        margin-bottom: 40px;
+        margin-right: 40px;
+    }
+
+    .container.team{
+        margin-bottom: 50px;
+    }
+
+    .subscribe form{
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 40px;
+    }
+
+    .container{
+        padding: 50px;
+    }
+
+    .container.specials{
+        margin-bottom: 50px;
+    }
+}

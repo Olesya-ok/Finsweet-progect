@@ -6,9 +6,17 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+          href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+          rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="all-post.page.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
 
 </head>
@@ -22,9 +30,9 @@
       <div class="header-nav">
         <nav>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">About Us</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="all-posts.page.html">Blog</a></li>
+            <li><a href="about-us.page.html">About Us</a></li>
             <li><a href="#">Contact Us</a></li>
           </ul>
         </nav>
@@ -64,8 +72,8 @@
             <img src="images/white-concrete-building-1838640.png" alt="" >
 
             <p>By <a href="#"><span>John Doe</span></a> l May 23, 2022</p>
-            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing <br> elit, sed do eiusmod tempor.</h3>
-            <p class="post-wrapper-p">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore <br>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing  elit, sed do eiusmod tempor.</h3>
+            <p class="post-wrapper-p">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
               eu fugiat nulla pariatur.
               Excepteur sint occaecat cupidatat non proident.</p>
             <a href="all-posts.page.html" target="_blank" class="button">Read More ></a>
@@ -211,14 +219,6 @@
         <h3>Featured in</h3>
       </div>
       <div class="logo-component">
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-
         <a href="#"><img src="images/logoComponents/Logo%202.png" alt="logo"></a>
         <a href="#"><img src="images/logoComponents/Logo%203.png" alt="logo"></a>
         <a href="#"><img src="images/logoComponents/Logo%204.png" alt="logo"></a>
@@ -228,7 +228,7 @@
   </section>
 
   <section>
-    <div class="container testimonial">
+    <div class=" testimonial">
       <div class="testimonials">
         <h2>TESTIMONIALS</h2>
         <h3>What people say about our blog</h3>
@@ -262,6 +262,10 @@
 
   <section>
     <div class="container team">
+      <div class="map">
+      <div id="map"></div>
+      <div id="distance">Загальна довжина маршруту: 0 м</div>
+      </div>
       <div class="join-team">
         <h2>Join our team to be a part of our story</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
@@ -288,7 +292,7 @@
     </div>
     </div>
     <div class="subscribe">
-      <h2>Subscribe to our news letter to <br> get latest updates and news</h2>
+      <h2>Subscribe to our news letter to get latest updates and news</h2>
       <form>
         <input type="text" placeholder="Enter Your Email">
         <button>Subscribe</button>
