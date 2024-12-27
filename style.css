@@ -843,6 +843,24 @@ form button:hover{
 }
 
 @media (max-width: 1024px) {
+
+    .container-header{
+        padding: 0;
+    }
+
+    .content{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .choose h2{
+        margin: 40px 0;
+    }
+
+    .choose-catalogs{
+        margin-bottom: 40px;
+    }
+
     .item{
         padding: 20px;
     }
@@ -904,7 +922,7 @@ form button:hover{
     }
 
     .container{
-        padding: 50px;
+        padding: 20px 50px;
     }
 
     .container.specials{
