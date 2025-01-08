@@ -278,4 +278,21 @@ marker.addTo(map);
 
 
 
+const swiper = new Swiper('.testimonials-slider', {
+    direction: 'horizontal', // Горизонтальная прокрутка
+    loop: true, // Зацикливать слайды
+    speed: 500, // Скорость анимации
+    pagination: {
+        el: '.swiper-pagination', // Элемент пагинации
+        clickable: true, // Можно кликать по пагинации
+    },
+    navigation: {
+        nextEl: '.swiper-button-next', // Кнопка "Next"
+        prevEl: '.swiper-button-prev', // Кнопка "Prev"
+    },
+});
+
+
+
+
 

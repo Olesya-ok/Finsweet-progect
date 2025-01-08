@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -32,7 +33,7 @@
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="all-posts.page.html">Blog</a></li>
-            <li><a href="about-us.page.html">About Us</a></li>
+            <li><a href="blogPost.page.html">About Us</a></li>
             <li><a href="#">Contact Us</a></li>
           </ul>
         </nav>
@@ -239,32 +240,73 @@
 
       </div>
 
-      <div class="testimonials-description">
-        <p class="testimonials-description-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <div class="profile-buttons">
-          <div class="profile">
-            <img src="images/profile-buttons/Profile%20picture%20(1).png" alt="profile">
-            <div class="profile-description">
-              <h4>Jonathan Vallem</h4>
-              <p>New york, USA</p>
+        <div class="testimonials-slider swiper">
+            <div class="swiper-wrapper">
+                <!-- Слайды -->
+                <div class="swiper-slide">
+                    <div class="testimonials-description">
+                        <p class="testimonials-description-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div class="profile-buttons">
+                            <div class="profile">
+                                <img src="images/profile-buttons/Profile%20picture%20(1).png" alt="profile">
+                                <div class="profile-description">
+                                    <h4>Jonathan Vallem</h4>
+                                    <p>New York, USA</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Еще слайды -->
+                <div class="swiper-slide">
+                    <div class="testimonials-description">
+                        <p class="testimonials-description-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div class="profile-buttons">
+                            <div class="profile">
+                                <img src="images/cards/woman-in-white-and-black-striped-shirt-wearing-black-sunglasses-3671083.png" alt="profile">
+                                <div class="profile-description">
+                                    <h4>Jane Doe</h4>
+                                    <p>Los Angeles, USA</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Еще слайды -->
+                <div class="swiper-slide">
+                    <div class="testimonials-description">
+                        <p class="testimonials-description-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <div class="profile-buttons">
+                            <div class="profile">
+                                <img src="images/cards/fashion-woman-cute-shoes-5704849.png" alt="profile">
+                                <div class="profile-description">
+                                    <h4>Jane Doe</h4>
+                                    <p>Los Angeles, USA</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
 
-            <div class="buttons">
-              <button><a href="#"><img src="images/profile-buttons/Back%20button.png" alt="button"></a></button>
-              <button><a href="#"><img src="images/profile-buttons/Next%20Button.png" alt="button"></a></button>
-            </div>
-
-          </div>
+            <!-- Навигация с кастомными стрелками -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
         </div>
-      </div>
+
+
     </div>
   </section>
 
   <section>
     <div class="container team">
       <div class="map">
-      <div id="map"></div>
-      <div id="distance">Загальна довжина маршруту: 0 м</div>
+        <div id="map"></div>
+        <div id="distance">Загальна довжина маршруту: 0 м</div>
       </div>
       <div class="join-team">
         <h2>Join our team to be a part of our story</h2>
@@ -314,6 +356,8 @@
   </div>
 
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="main.js"></script>
+
 </body>
 </html>
