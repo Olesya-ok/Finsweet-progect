@@ -34,6 +34,10 @@ table {
 header {
     background-color: #232536;
     width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000
 }
 
 .container-header {
