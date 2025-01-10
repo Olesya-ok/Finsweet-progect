@@ -8,7 +8,6 @@
 
 body {
     font-family: "Inter", sans-serif;
-    max-width: 1440px;
     margin: 0 auto;
 }
 
@@ -27,20 +26,24 @@ table {
 }
 
 .container {
-    /*max-width: 1280px;*/
+    max-width: 1280px;
     margin: auto;
     padding: 0 82px 0;
 }
 
-header{
+header {
     background-color: #232536;
+    width: 100%;
 }
 
-.container-header{
+.container-header {
     display: flex;
     padding: 25px 0;
     justify-content: space-between;
     align-items: center;
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .animated-image {
@@ -62,7 +65,7 @@ header{
     }
 }
 
-.header-nav{
+.header-nav {
     display: flex;
     gap: 32px;
     align-items: center;
@@ -73,20 +76,16 @@ nav ul {
     gap: 24px;
 }
 
-li a{
+.header-nav nav ul li {
     color: #ffffff;
 }
 
-
-.header-nav nav ul li:hover {
-    /*font-size: 20px;*/
-    /*transform:translate(0, -40px);*/
+.nav-header:hover {
     transform: scale(1.5, 2);
     text-shadow: 0 0 10px #FFD050, 0 0 20px #ffb700;
 }
 
-
-.container .container-header .header-nav button{
+.header-nav button {
     border: none;
     background: #ffffff;
     color: #232536;
@@ -592,11 +591,18 @@ h1{
     display: flex;
     background-color: #FBF6EA;
     margin: 80px;
+    width: 100%;
 }
 
 .testimonials{
     margin-top: 92px;
     margin-left: 30px;
+}
+
+.testimonials-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
 }
 
 .testimonials h2{
@@ -676,7 +682,6 @@ h1{
     color: #6D6E76;
 }
 
-/* Стиль для слайдера */
 .testimonials-slider {
     width: 100%;
     position: relative;
@@ -719,37 +724,33 @@ button img {
     height: 25px;
 }
 
-/* Стиль кнопок слайдера */
 .swiper-button-next, .swiper-button-prev {
     position: absolute;
     bottom: 20px;
     z-index: 10;
     background-size: contain;
     background-repeat: no-repeat;
-    width: 30px;  /* Укажите размер кнопки */
-    height: 30px; /* Укажите размер кнопки */
+    width: 30px;
+    height: 30px;
     transform: translateY(0);
     cursor: pointer;
 }
 
-/* Кастомные стрелки */
 .swiper-button-prev {
     left: 580px;
     top: 400px;
-    background-image: url('images/profile-buttons/Back%20button.png'); /* Вставьте путь к вашей картинке */
+    background-image: url('images/profile-buttons/Back%20button.png');
 }
 
 .swiper-button-next {
     right: 30px;
     top: 400px;
-    background-image: url('images/profile-buttons/Next%20Button.png'); /* Вставьте путь к вашей картинке */
+    background-image: url('images/profile-buttons/Next%20Button.png');
 }
 
-/* Скрытие стандартных стрелок */
 .swiper-button-next::after, .swiper-button-prev::after {
-    content: none; /* Убираем стандартное содержимое стрелок */
+    content: none;
 }
-
 
 .buttons img {
     cursor: pointer;
@@ -818,16 +819,25 @@ button img {
 
 /*footer*/
 
-.footer{
+.footer {
     background-color: black;
+    width: 100%;
     padding: 60px 80px;
+    box-sizing: border-box;
 }
+
+.footer-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
 
 .footer-logo-nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 54px;
+
 }
 
 .footer-nav{
@@ -837,16 +847,16 @@ button img {
 
 }
 
-nav ul {
+.footer-nav nav ul {
     display: flex;
     gap: 24px;
 }
 
-li {
+.footer-nav nav ul li {
     color: #ffffff;
 }
 
-li:hover {
+.footer-nav nav ul li:hover {
     transform: scale(1.5);
     text-shadow: 0 0 10px #FFD050, 0 0 20px #ffb700;
 }
