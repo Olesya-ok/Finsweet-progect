@@ -1,0 +1,90 @@
+.contact-us {
+  margin-top: 128px;
+  margin-bottom: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-us h2 {
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 125%;
+  letter-spacing: 0.19em;
+  text-transform: uppercase;
+  text-align: center;
+  color: black;
+}
+.contact-us h3 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 133%;
+  letter-spacing: -0.04em;
+  text-align: center;
+  color: black;
+  margin-top: 12px;
+  margin-bottom: 24px;
+}
+.contact-us p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  text-align: center;
+  color: #6D6E76;
+}
+
+.working-hours {
+  display: flex;
+  padding: 48px 64px;
+  gap: 42px;
+  max-width: 768px;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 32px;
+  background-color: #592EA9;
+  color: #ffffff;
+}
+.working-hours .hours p, .working-hours .contacts p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  opacity: 0.6;
+}
+.working-hours .hours .line-contacts, .working-hours .contacts .line-contacts {
+  border: 1px solid #ffffff;
+  width: 294px;
+  height: 0;
+  background: white;
+  opacity: 0.1;
+  margin: 16px auto;
+}
+.working-hours .hours h4, .working-hours .contacts h4 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 160%;
+}
+
+.contacts-form form {
+  display: flex;
+  flex-direction: column;
+  max-width: 768px;
+  width: 100%;
+  margin: auto;
+  row-gap: 16px;
+  margin-bottom: 128px;
+}
+.contacts-form form input, .contacts-form form select, .contacts-form form textarea {
+  background-color: #fff;
+  border: 1px solid rgba(109, 110, 118, 0.5);
+  border-radius: 2px;
+  padding: 24px;
+  margin: 0;
+}
+.contacts-form form textarea {
+  height: 144px;
+}
+.contacts-form form button {
+  margin: 0;
+}
+
+/*# sourceMappingURL=contact-us.page.css.map */

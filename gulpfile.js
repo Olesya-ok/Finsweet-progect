@@ -4,19 +4,19 @@ const cssmin = require('gulp-cssmin');
 const jsmin = require('gulp-jsmin');
 
 gulp.task('html-min', async function () {
-    return gulp.src('./**/*.html')
+    return gulp.src('./fourth page/contact-us.page.html')
         .pipe(htmlmin({ collapseWhitespace: true }))
         .pipe(gulp.dest('./building'));
 });
 
 gulp.task('css-min', async function () {
-    return  gulp.src('style.css')
+    return  gulp.src('./fourth page/contact-us.page.scss')
         .pipe(cssmin())
         .pipe(gulp.dest('./building'));
 });
 
 gulp.task('js-min', async function () {
-    return  gulp.src('**/*.js')
+    return  gulp.src('./second page/all-posts.page.js')
         .pipe(jsmin())
         .pipe(gulp.dest('./building'));
 });

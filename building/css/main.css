@@ -1,0 +1,110 @@
+.inner-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 128px 0 64px 256px;
+}
+.inner-header .photo-name {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.inner-header .photo-name .name h2 {
+  font-weight: 700;
+  font-size: 28px;
+  color: #592EA9;
+}
+.inner-header .photo-name .name p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #6D6E76;
+}
+.inner-header h3 {
+  font-weight: 700;
+  font-size: 48px;
+  color: black;
+  margin-bottom: 34px;
+}
+.inner-header .logo-startup {
+  display: flex;
+}
+
+.photo-bg-girl img {
+  width: 100%;
+  height: 100%;
+}
+
+.blog-body {
+  margin: 64px 218px 128px;
+}
+.blog-body h2 {
+  margin-bottom: 16px;
+}
+.blog-body p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  color: #6D6E76;
+  margin-bottom: 24px;
+}
+.blog-body p:first-of-type {
+  margin-bottom: 48px;
+}
+.blog-body p:nth-of-type(4) {
+  margin-bottom: 48px;
+}
+.blog-body ol {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 24px;
+}
+.blog-body ol .blog-body-list li {
+  font-weight: 700;
+  font-size: 24px;
+  color: #161722;
+  line-height: 133%;
+}
+
+.read-next-container {
+  border: none;
+  border-bottom: 1px solid #6D6E76;
+  width: 1280px;
+  padding-bottom: 20px;
+  margin-bottom: 128px;
+}
+.read-next-container h2 {
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  color: #000;
+  margin-bottom: 64px;
+}
+.read-next-container .read-next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 32px;
+}
+.read-next-container .read-next .read-list img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 32px;
+}
+.read-next-container .read-next .read-list p {
+  font-weight: 500;
+  font-size: 14px;
+  color: #4C4C4C;
+  margin-bottom: 16px;
+}
+.read-next-container .read-next .read-list p a {
+  color: #592EA9;
+}
+.read-next-container .read-next .read-list h3 {
+  font-weight: 700;
+  font-size: 28px;
+  color: black;
+  margin-bottom: 16px;
+}
+
+/*# sourceMappingURL=main.css.map */
